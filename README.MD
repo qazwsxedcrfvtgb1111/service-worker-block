@@ -1,0 +1,1 @@
+This project is meant to simulate a service worker blocking extension requests
