@@ -1,0 +1,26 @@
+{
+  "name": "Request blocking tester",
+  "manifest_version": 3,
+  "web_accessible_resources": [{
+    "resources": ["import.js"],
+    "matches": ["<all_urls>"]
+  }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "description": "Request blocking tester",
+  "offline_enabled": true,
+  "minimum_chrome_version": "88",
+  "incognito": "split",
+  "version": "1.0.0"
+}
